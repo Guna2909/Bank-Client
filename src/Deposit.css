@@ -1,0 +1,90 @@
+/* Full-Screen Background */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #00274D, #0056b3); /* Dark to Light Blue */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Form Container */
+.custom-form-container {
+    background: rgba(255, 255, 255, 0.2); /* Glassmorphism Effect */
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 400px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Form Heading */
+.register-heading {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Input Fields */
+.custom-input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    text-align: center;
+    outline: none;
+}
+
+/* Placeholder Styling */
+.custom-input::placeholder {
+    color: #e0e0e0;
+}
+
+/* Labels */
+.custom-label {
+    font-weight: bold;
+    color: white;
+}
+
+/* Submit Button */
+.custom-button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(90deg, #ffcc00, #ff9900);
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s ease-in-out;
+    color: white;
+    margin-top: 10px;
+}
+
+.custom-button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(90deg, #ff9900, #ffcc00);
+}
+
+/* Alert Messages */
+.alert {
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 450px) {
+    .custom-form-container {
+        width: 90%;
+    }
+}
